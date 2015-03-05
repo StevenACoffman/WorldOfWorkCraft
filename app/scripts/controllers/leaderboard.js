@@ -2,15 +2,15 @@
 
 /**
  * @ngdoc function
- * @name worldOfWorkCraftApp.controller:DashboardCtrl
+ * @name worldOfWorkCraftApp.controller:LeaderboardCtrl
  * @description
- * # DashboardCtrl
+ * # LeaderboardCtrl
  * Controller of the worldOfWorkCraftApp
  */
 
 angular.module('worldOfWorkCraftApp')
-  .controller('DashboardCtrl', ['$scope', '$http', function($scope, $http) {
+  .controller('LeaderboardCtrl', ['$scope', '$http', function($scope, $http) {
     $http.get('../leaderboard.json').success(function(data) {
-      $scope.dashboard = data;
+      $scope.leaderboard = data;
     });
   }]);
