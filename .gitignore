@@ -150,12 +150,11 @@ node_modules
 
 ### YEOMAN ###
 
-bower_components/
-build/
-dist/
+bower_components
+build
+dist
 
 ### SASS ###
 .sass-cache
 *.css.map
-
-
+.tmp
