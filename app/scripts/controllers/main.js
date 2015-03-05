@@ -13,7 +13,7 @@ angular.module('worldOfWorkCraftApp')
     // TODO replace with "my challenges" endpoint URL
     $http.get('../challenges.json')
       .success(function(data) {
-        $scope.myChallenges = data;
+        $scope.myChallenges = [data];
       })
       .error(function(data, status) {
         console.error('Failed to fetch user challenge data: ' + status);
