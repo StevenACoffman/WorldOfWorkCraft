@@ -1,4 +1,11 @@
-<div class="container-fluid">
+<div ng-hide="UserData.username">
+  <div class="row">
+    <div class="col-md-12">
+      <p class="centered">Please log in.</p>
+    </div>
+  </div>
+</div>
+<div ng-show="UserData.username" class="container-fluid">
   <div class="row">
     <div class="col-md-9">
       <h2>Pick A Challenge</h2>
