@@ -1,23 +1,19 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
-
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-9">
+      <h2>Pick A Challenge</h2>
+    </div>
+    <div class="col-md-3">
+      <div class="glyphicon glyphicon-plus-sign"></div>
+    </div>
+  </div>
+  <div class="row" ng-repeat="challenge in myChallenges">
+    <div class="col-md-12 table-bordered">
+      <div class="challenge-padding">
+        <div class="glyphicon glyphicon-chevron-right pull-right"></div>
+        <p align="center">{{challenge.name}}</p>
+        <div class="progress-bar-empty"></div>
+      </div>
+    </div>
+  </div>
 </div>
