@@ -1,14 +1,14 @@
 [
   {
     "name":"Bugs Bunny",
-    "score": "40"
+    "points": "40"
   },
   {
     "name":"Daffy Duck",
-    "score": "25"
+    "points": "25"
   },
   {
     "name":"Elmer Fudd",
-    "score":"15"
+    "points":"15"
   }
 ]
