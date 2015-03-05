@@ -8,14 +8,15 @@
  * Controller of the worldOfWorkCraftApp
  */
 angular.module('worldOfWorkCraftApp')
-  .controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
-
-    // TODO replace with "my challenges" endpoint URL
-    $http.get('../challenges.json')
-      .success(function(data) {
-        $scope.myChallenges = [data];
-      })
-      .error(function(data, status) {
-        console.error('Failed to fetch user challenge data: ' + status);
-      });
+  .controller('MainCtrl', ['$scope', '$http', 'UserData', function ($scope, $http, UserData) {
+    $scope.UserData = UserData;
+    if (UserData.username) {
+      $http.get('http://localhost:8080/worldofworkcraft/challenges/' + UserData.username)
+        .success(function(data) {
+          $scope.myChallenges = data;
+        })
+        .error(function(data, status) {
+          console.error('Failed to fetch user challenge data: ' + status);
+        });
+    }
   }]);
