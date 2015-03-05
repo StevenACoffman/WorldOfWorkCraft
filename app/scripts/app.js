@@ -31,7 +31,7 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
-      .when('/leaderboard', {
+      .when('/leaderboard/:challengename', {
         templateUrl: 'views/leaderboard.html',
         controller: 'LeaderboardCtrl'
       })

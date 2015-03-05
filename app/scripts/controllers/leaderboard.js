@@ -9,8 +9,9 @@
  */
 
 angular.module('worldOfWorkCraftApp')
-  .controller('LeaderboardCtrl', ['$scope', '$http', function($scope, $http) {
+  .controller('LeaderboardCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
     $http.get('../leaderboard.json').success(function(data) {
       $scope.leaderboard = data;
+      $scope.challengename = $routeParams.challengename;
     });
   }]);

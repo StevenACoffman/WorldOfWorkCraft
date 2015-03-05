@@ -19,6 +19,7 @@
     </div>
   </div>
   <div class="row" ng-repeat="challenge in myChallenges">
+    <a href="#/leaderboard/{{challenge.name}}">
     <div class="col-md-12 table-bordered">
       <div class="challenge-padding">
         <div class="glyphicon glyphicon-chevron-right pull-right"></div>
@@ -26,5 +27,6 @@
         <div class="progress-bar-empty"></div>
       </div>
     </div>
+    </a>
   </div>
 </div>
