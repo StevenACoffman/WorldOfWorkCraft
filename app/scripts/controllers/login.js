@@ -8,7 +8,7 @@
  * Controller of the wrldOfWorkCraftApp
  */
 angular.module('worldOfWorkCraftApp')
-  .controller('LoginCtrl', function ($scope, $rootScope, UserData) {
+  .controller('LoginCtrl', function ($scope, $rootScope, $location, UserData) {
 
     $scope.login = function (uniqname) {
 
@@ -19,5 +19,7 @@ angular.module('worldOfWorkCraftApp')
 
       UserData.username = uniqname;
       console.log(UserData.username + ' clicked the login button.');
+
+      $location.path("/")
     };
   });
