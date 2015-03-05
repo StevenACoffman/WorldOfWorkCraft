@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="glyphicon glyphicon-chevron-left" ng-click="goBack();"></div>
+      <p align="center">{{challengeName}}</p>
+    </div>
+  </div>
+
+  <form ng-submit="logAchievement(achievementName, pointValue);">
+    <div class="row">
+      <div class="col-md-12">
+        <label for="achievement-name">Achievement Name:</label>
+        <input ng-model="achievementName" id="achievement-name" type="text">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <label for="select-achievement">Type: </label>
+        <select id="select-achievement" ng-model="pointValue">
+          <option ng-repeat="achievementOption in achievementOptions" value="{{achievementOption.points}}">{{achievementOption.name}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <button>Log</button>
+      </div>
+    </div>
+  </form>
+
+  <div class="row" ng-repeat="achievement in achievements">
+    <div class="col-md-12">
+      <p>{{achievement.name}}</p>
+      <p>Points: {{achievement.points}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+[
+  { "name": "Learn", "points": 5 },
+  { "name": "Apply", "points": 10 },
+  { "name": "Teach", "points": 20 }
+]
