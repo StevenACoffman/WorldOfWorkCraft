@@ -43,6 +43,10 @@
               <li><a ng-href="#/about">About</a></li>
               <li><a ng-href="#/">Contact</a></li>
               <li><a ng-href="#/dashboard">Dashboard</a></li>
+              <li>
+                <a ng-hide="UserData.username" ng-href="#/login">Login</a>
+                <a ng-show="UserData.username" ng-click="logout(UserData);" ng-href="#/">Logout</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -89,6 +93,8 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/login.js"></script>
+        <script src="scripts/factories/userdata.js"></script>
         <script src="scripts/controllers/dashboard.js"></script>
         <!-- endbuild -->
 </body>
