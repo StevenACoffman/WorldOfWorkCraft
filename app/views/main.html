@@ -19,14 +19,17 @@
     </div>
   </div>
   <div class="row" ng-repeat="challenge in myChallenges">
-    <a href="#/leaderboard/{{challenge.name}}">
     <div class="col-md-12 table-bordered">
       <div class="challenge-padding">
         <div class="glyphicon glyphicon-chevron-right pull-right"></div>
-        <p align="center">{{challenge.name}}</p>
+          <a href="#/leaderboard/{{challenge.name}}">
+            <p align="center">{{challenge.name}}</p>
+          </a>
+          <a href="#/logachievement/{{challenge.name}}">
+            Log
+          </a>
         <div class="progress-bar-empty"></div>
       </div>
     </div>
-    </a>
   </div>
 </div>
