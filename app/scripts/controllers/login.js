@@ -8,10 +8,16 @@
  * Controller of the wrldOfWorkCraftApp
  */
 angular.module('worldOfWorkCraftApp')
-  .controller('LoginCtrl', function ($scope) {
+  .controller('LoginCtrl', function ($scope, $rootScope, UserData) {
 
     $scope.login = function(uniqname) {
-      console.log(uniqname + ' clicked the login button.');
-      $scope
+
+      $rootScope.UserData = UserData;
+      $rootScope.logout = function(userData) {
+        userData.username = '';
+      };
+
+      UserData.username = uniqname;
+      console.log(UserData.username + ' clicked the login button.');
     }
   });
