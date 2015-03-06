@@ -46,6 +46,6 @@ angular.module('worldOfWorkCraftApp')
         };
 
         $scope.goBack = function () {
-            $location.path('/leaderboard/' + $scope.challengeName);
+            $location.path('/leaderboard/');
         }
     });
