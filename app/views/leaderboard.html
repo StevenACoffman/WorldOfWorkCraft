@@ -1,8 +1,46 @@
-<p>{{challengename}}</p>
-<p ng-show="challenge.startDate">{{challenge.startDate}} - {{challenge.endDate}}</p>
-<table class="table table-hover table-striped">
-  <tr ng-repeat="person in leaderboard | orderBy:orderByPoints">
-    <td width="250px;">{{person.name}}</td>
-    <td>{{person.points}}</td>
-  </tr>
-</table>
+<div class="row">
+  <div class="col-sm-12">
+
+    <div class="panel panel-default">
+      <table class="table">
+        <tbody>
+          <tr>
+
+            <td style="vertical-align: middle; horizontal-align: center">
+              <img class="btn btn-white" src="images/challenges/neo4j-blue-logo.png" />
+
+            </td>
+            <td style="vertical-align: middle; horizontal-align: center">
+              <h3>{{challengename}}</h3>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="panel panel-danger">
+      <!-- Default panel contents -->
+      <div class="panel-heading">
+        <p ng-show="challenge.startDate">{{challenge.startDate}} - {{challenge.endDate}}</p>
+      </div>
+      <!-- Table -->
+      <table class="table table-hover table-striped">
+        <tbody>
+          <tr ng-repeat="person in leaderboard | orderBy:orderByPoints">
+            <td style="vertical-align: middle; horizontal-align: center">
+              <h3>{{person.name}}</h3>
+            </td>
+            <td style="vertical-align: middle; horizontal-align: center">
+              <h3>
+                <span class="center-block text-center badge badge-danger">{{person.points}}</span>
+              </h3>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

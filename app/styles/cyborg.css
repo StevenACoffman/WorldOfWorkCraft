@@ -5724,3 +5724,17 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   background-color: #fff;
   border-color: #fff;
 }
+.badge-danger {
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #cc0000;
+  border-color: #bd001f;
+  border-radius: 20px;
+}
