@@ -4,6 +4,13 @@
             <h3 align="center">Achievement Log</h3>
         </div>
         <div class="row">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="{totalPoints()}" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    <span class="sr-only">60% Complete</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-6">
                 <div class="row" ng-repeat="achievement in achievements" ng-show="achievements">
                     <div class="col-md-6 text-left">{{achievement.name}}</div>
