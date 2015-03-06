@@ -14,7 +14,12 @@ angular.module('worldOfWorkCraftApp')
       $scope.leaderboard = data;
       $scope.challengename = $routeParams.challengename;
     });
+
     $scope.orderByPoints = function(person) {
       return parseInt(person.points) * -1;
     };
+
+    $http.get('http://localhost:8080/worldofworkcraft/challenges/' + $routeParams.challengename).success(function(data) {
+      $scope.challenge = data;
+    });
   }]);
