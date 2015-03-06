@@ -24,11 +24,11 @@ angular.module('worldOfWorkCraftApp')
     $scope.logAchievement = function(achievement, pointValue) {
 
       // TODO replace with real POST
-      console.log('Would have posted to achievements');
-      
-      $http.post('http://localhost:8080/worldofworkcraft/logger', {uniqname:UserData.username, achievementName:achievement, verb:'LEARN'});
+      console.log('Would have posted to achievements with achievement ' + achievement + ' and pointValue ' + pointValue);
 
-      $scope.achievements.push({name: achievementName, points: pointValue});
+      $http.post('http://localhost:8080/worldofworkcraft/logger/log', {uniqname:UserData.username, achievementName:achievement, verb:'LEARN'});
+
+      $scope.achievements.push({name: achievement, points: pointValue});
     };
 
     $scope.goBack = function() {
