@@ -1,0 +1,8 @@
+<p>Don't you want some of these shiny badges?</p>
+<ul>
+  <li ng-repeat="badge in allBadges" data-badge-image="{{badge.image}}">
+    {{badge.name}}
+    <ul><li ng-repeat="achievement in badge.achievements">{{achievement.name}}</li></ul>
+  </li>
+
+</ul>

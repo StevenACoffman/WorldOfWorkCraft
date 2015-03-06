@@ -47,6 +47,8 @@
             </li>
             <li><a ng-href="#/about"><i class="fa fa-info-circle"></i> About</a>
             </li>
+            <li><a ng-href="#/badges"><i class="fa fa-shield icon-stack-base"></i> Badges</a>
+            </li>
             <li>
               <a ng-hide="UserData.username" ng-href="#/login"><i class="fa fa-sign-in"></i> Login</a>
               <a ng-show="UserData.username" ng-click="logout(UserData);" ng-href="#/"><i class="fa fa-sign-out"></i> Logout</a>
@@ -99,6 +101,7 @@
   <script src="scripts/factories/userdata.js"></script>
   <script src="scripts/controllers/main.js"></script>
   <script src="scripts/controllers/about.js"></script>
+  <script src="scripts/controllers/badges.js"></script>
   <script src="scripts/controllers/login.js"></script>
   <script src="scripts/controllers/leaderboard.js"></script>
   <script src="scripts/controllers/logachievement.js"></script>

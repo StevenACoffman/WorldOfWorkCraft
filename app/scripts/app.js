@@ -31,6 +31,10 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/badges', {
+        templateUrl: 'views/badges.html',
+        controller: 'BadgesCtrl'
+      })
       .when('/leaderboard/:challengename', {
         templateUrl: 'views/leaderboard.html',
         controller: 'LeaderboardCtrl'
