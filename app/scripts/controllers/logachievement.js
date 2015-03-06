@@ -3,13 +3,21 @@ angular.module('worldOfWorkCraftApp')
 
     $scope.challengeName = $routeParams.challengeName;
 
-    // TODO replace with real service endpoint
     $http.get('http://localhost:8080/worldofworkcraft/learner/'+UserData.username+'/achievements')
       .success(function(data) {
         $scope.achievements = data;
       })
       .error(function(data, status) {
         console.error('Failed to fetch achievement data');
+      });
+
+
+    $http.get('http://localhost:8080/worldofworkcraft/achievements')
+      .success(function(data) {
+        $scope.availableAchievements = data._embedded.achievements;
+      })
+      .error(function(data, status) {
+        console.error('Failed to fetch data about available achievements.');
       });
 
     // TODO replace with real service endpoint
@@ -24,11 +32,12 @@ angular.module('worldOfWorkCraftApp')
     $scope.logAchievement = function(achievement, pointValue) {
 
       // TODO replace with real POST
-      console.log('Would have posted to achievements with achievement ' + achievement + ' and pointValue ' + pointValue);
+      var jAchievement = JSON.parse(achievement);
+      console.log('Would have posted to achievements with achievement ' + jAchievement.name + ' and pointValue ' + jAchievement.points);
 
-      $http.post('http://localhost:8080/worldofworkcraft/logger/log', {uniqname:UserData.username, achievementName:achievement, verb:'LEARN'});
+      $http.post('http://localhost:8080/worldofworkcraft/logger/log', {uniqname:UserData.username, achievementName:jAchievement.name, verb:'LEARN'});
 
-      $scope.achievements.push({name: achievement, points: pointValue});
+      $scope.achievements.push({name: jAchievement.name, points: jAchievement.points});
     };
 
     $scope.goBack = function() {

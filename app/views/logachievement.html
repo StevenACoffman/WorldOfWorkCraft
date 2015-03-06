@@ -6,11 +6,14 @@
     </div>
   </div>
 
-  <form ng-submit="logAchievement(achievementName, pointValue);">
+  <form ng-submit="logAchievement(achievement, pointValue);">
     <div class="row">
       <div class="col-md-12">
-        <label for="achievement-name">Achievement Name:</label>
-        <input ng-model="achievementName" id="achievement-name" type="text">
+        <label for="achievement-name">Achievement: </label>
+        <select id="achievement-name" ng-model="achievement">
+          <option ng-repeat="achievement in availableAchievements" value="{{achievement}}">{{achievement.name}}</option>
+
+        </select>
       </div>
     </div>
     <div class="row">
