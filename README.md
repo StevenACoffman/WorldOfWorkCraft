@@ -1,4 +1,4 @@
-# world-of-work-craft
+# ** World Of WorkCraft **
 
 World Of WorkCraft is intended as parody, satire, and humor and is for entertainment purposes only. Any legitimate confusion with World of WarCraft is unintentional. World of WarCraft is a trademark or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries. Please don't sue us. Please.
 
@@ -26,11 +26,11 @@ Run `grunt` for building and `grunt serve` for preview.
 
 Running `grunt test` will run the unit tests with karma.
 
-** World Of WorkCraft **
----
-*** Gamification of Professional Development ***
+# ** World Of WorkCraft **
 
-**Goal**
+## *** Gamification of Professional Development ***
+
+### **Goal**
 
 <span id="h.x2k3838n6dnl" class="anchor"></span>Our mind and taking care of it.
 
@@ -42,23 +42,23 @@ make it fun and motivational.
 
 <span id="h.30j0zll" class="anchor"></span>**Team**
 
-| Name               | Department    | Role               |
-| ------------------ |:-------------:| :------------------|
-|  Leif Myklebust    | MSIS  | Tech Lead & Pitcher|
-|  Andy Vella    | MSIS | Project Manager / BA Stuff |
-|  Bryan Martyn  | MSIS | General Helper Dude |
-|  Amanda Wright | MSIS | UX Stuff / Bad Graphics |
-|  Dave Harlan   |   ITS    |      Developer |
-|  Steve Coffman |   MSIS   |      Developer |
-|  Ed Sucarski   |   MSIS   |      Developer |
-|  Greg Graziloi |   MSIS   |      Developer |
-|  Geoff Holden  |   MSIS   |      Developer |
-|  Bruce Meier   |   MSIS   |      Developer |
-|  Misty Periard |   MSIS   |      Developer |
-|  Scott Boomhour|   MSIS   |      Developer |
-|  Yuying Tian   |   MSIS   |      Developer |
-|  Willy Wangsa  |   Dentistry|    Developer |
-|  John Schultz  |   MSIS   |      Developer |
+| Name           | Department    | Role               |
+| -------------- |:-------------:| :------------------|
+|  Leif Myklebust|   MSIS        | Tech Lead & Pitcher|
+|  Andy Vella    |   MSIS        | Project Manager / BA Stuff |
+|  Bryan Martyn  |   MSIS        | General Helper Dude |
+|  Amanda Wright |   MSIS        | UX Stuff / Bad Graphics |
+|  Dave Harlan   |   ITS         |      Developer |
+|  Steve Coffman |   MSIS        |      Developer |
+|  Ed Sucarski   |   MSIS        |      Developer |
+|  Greg Graziloi |   MSIS        |      Developer |
+|  Geoff Holden  |   MSIS        |      Developer |
+|  Bruce Meier   |   MSIS        |      Developer |
+|  Misty Periard |   MSIS        |      Developer |
+|  Scott Boomhour|   MSIS        |      Developer |
+|  Yuying Tian   |   MSIS        |      Developer |
+|  Willy Wangsa  |   Dentistry   |    Developer |
+|  John Schultz  |   MSIS        |      Developer |
 
 <span id="h.1fob9te" class="anchor"></span>**Show and tell**
 
@@ -103,10 +103,6 @@ categories.
 
 -   Teach - 20 points - I presented at a conference
 
-###
-
-###
-
 ### The UX
 
 We created stories and
@@ -128,16 +124,7 @@ Logo Font is LifeCraft by Eliot Truelove
 Avatars by [Hopstarter (Jojo
 Mendoza](http://www.iconarchive.com/artist/hopstarter.html)[)](http://www.iconarchive.com/artist/hopstarter.html)
 
-** Disclaimer: **
------------------
-
-World Of WorkCraft is intended as parody, satire, and humor and is for
-entertainment purposes only. Any legitimate confusion with World of
-WarCraft is unintentional. World of WarCraft is a trademark or
-registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or
-other countries. Please don't sue us. Please.
-
-**The Technology (the fun part!)**
+### **The Technology (the fun part!)**
 
 As part of this hack, we wanted to play with some technologies we don’t
 all get to play with every day. We wanted to do something with NoSQL,
