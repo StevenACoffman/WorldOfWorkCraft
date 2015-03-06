@@ -35,6 +35,7 @@ function getUserBadges($scope, $http, UserData) {
         for (var j = 0; j < $scope.allBadges.length; j++) {
           if ($scope.myBadges[i].id === $scope.allBadges[j].id) {
             $scope.allBadges[j].earned = true;
+            $scope.allBadges[j].extraClass = 'panel-danger';
           }
         }
       }
@@ -53,6 +54,7 @@ function getUserBadges($scope, $http, UserData) {
           for (var k=0; k < $scope.allBadges[j].achievements.length; k++) {
             if ($scope.myAchievements[i].id === $scope.allBadges[j].achievements[k].id) {
               $scope.allBadges[j].achievements[k].earned = true;
+              $scope.allBadges[j].achievements[k].extraClass = "danger";
             }
           }
         }

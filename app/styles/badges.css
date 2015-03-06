@@ -1,3 +1,7 @@
 .badge-image {
   height: 70px;
 }
+
+table > tbody > tr > td.vertical-center {
+  vertical-align: middle;
+}
