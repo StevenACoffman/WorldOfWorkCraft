@@ -5738,3 +5738,6 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   border-color: #bd001f;
   border-radius: 20px;
 }
+.margin-negative-50-top {
+  margin-top: -50px;
+}

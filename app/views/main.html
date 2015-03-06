@@ -2,18 +2,18 @@
 
   <img src="images/world-of-workcraft.png" class="img-responsive" alt="Responsive image">
 </div>
-<div ng-hide="UserData.username">
+<div ng-hide="UserData.username" class="margin-negative-50-top">
   <div class="row">
     <div class="col-md-12">
       <h3>
-        <div class="text-center center-block margin-negative-50-top">
+        <div class="text-center center-block">
 
           <a class="btn btn-danger btn-lg" ng-href="#/login"><i class="fa fa-sign-in"></i> Login</a> to Start your Adventure! </div>
       </h3>
     </div>
   </div>
 </div>
-<div ng-show="UserData.username" class="container-fluid">
+<div ng-show="UserData.username" class="container-fluid margin-negative-50-top">
   <div class="row" ng-repeat="challenge in myChallenges">
     <div class="col-md-12">
       <div class="panel panel-danger">
