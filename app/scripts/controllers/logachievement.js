@@ -11,7 +11,6 @@ angular.module('worldOfWorkCraftApp')
         console.error('Failed to fetch achievement data');
       });
 
-
     $http.get('http://localhost:8080/worldofworkcraft/achievements')
       .success(function(data) {
         $scope.availableAchievements = data._embedded.achievements;
@@ -30,8 +29,6 @@ angular.module('worldOfWorkCraftApp')
       });
 
     $scope.logAchievement = function(achievement, pointValue) {
-
-      // TODO replace with real POST
       var jAchievement = JSON.parse(achievement);
       console.log('Would have posted to achievements with achievement ' + jAchievement.name + ' and pointValue ' + jAchievement.points);
 
