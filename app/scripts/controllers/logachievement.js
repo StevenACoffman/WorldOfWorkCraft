@@ -1,10 +1,10 @@
 angular.module('worldOfWorkCraftApp')
-  .controller('LogAchievementCtrl', function($scope, $routeParams, $location, $http) {
+  .controller('LogAchievementCtrl', function($scope, $routeParams, $location, $http, UserData) {
 
     $scope.challengeName = $routeParams.challengeName;
 
     // TODO replace with real service endpoint
-    $http.get('../achievements.json')
+    $http.get('http://localhost:8080/worldofworkcraft/learner/'+UserData.username+'/achievements')
       .success(function(data) {
         $scope.achievements = data;
       })
@@ -21,10 +21,12 @@ angular.module('worldOfWorkCraftApp')
         console.error('Failed to fetch achievement data');
       });
 
-    $scope.logAchievement = function(achievementName, pointValue) {
+    $scope.logAchievement = function(achievement, pointValue) {
 
       // TODO replace with real POST
       console.log('Would have posted to achievements');
+      
+      $http.post('http://localhost:8080/worldofworkcraft/logger', {uniqname:UserData.username, achievementName:achievement, verb:'LEARN'});
 
       $scope.achievements.push({name: achievementName, points: pointValue});
     };
