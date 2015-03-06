@@ -1,6 +1,6 @@
 <p>{{challengename}}</p>
 <table>
-  <tr  ng-repeat="person in leaderboard">
+  <tr ng-repeat="person in leaderboard | orderBy:orderByPoints">
     <td width="250px;">{{person.name}}</td>
     <td>{{person.points}}</td>
   </tr>

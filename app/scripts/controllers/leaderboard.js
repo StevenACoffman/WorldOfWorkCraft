@@ -14,4 +14,7 @@ angular.module('worldOfWorkCraftApp')
       $scope.leaderboard = data;
       $scope.challengename = $routeParams.challengename;
     });
+    $scope.orderByPoints = function(person) {
+      return parseInt(person.points) * -1;
+    };
   }]);
