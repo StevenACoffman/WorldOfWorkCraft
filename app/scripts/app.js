@@ -39,7 +39,7 @@ angular
         templateUrl: 'views/leaderboard.html',
         controller: 'LeaderboardCtrl'
       })
-      .when('/logachievement/:challengeName', {
+      .when('/logachievement/', {
         templateUrl: 'views/logachievement.html',
         controller: 'LogAchievementCtrl'
       })
