@@ -1,6 +1,6 @@
 <p>{{challengename}}</p>
 <p ng-show="challenge.startDate">{{challenge.startDate}} - {{challenge.endDate}}</p>
-<table>
+<table class="table table-hover table-striped">
   <tr ng-repeat="person in leaderboard | orderBy:orderByPoints">
     <td width="250px;">{{person.name}}</td>
     <td>{{person.points}}</td>
