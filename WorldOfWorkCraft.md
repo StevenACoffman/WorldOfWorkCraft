@@ -1,14 +1,10 @@
+** World Of WorkCraft **
 ---
-subtitle: |
-    <span id="h.2lmsrlh9pxz1" class="anchor"></span>Gamification of
-    Professional Development
-title: '<span id="h.rozuc5es8097" class="anchor"></span>World of WorkCraft'
-...
+*** Gamification of Professional Development ***
 
 **Goal**
 
-<span id="h.x2k3838n6dnl" class="anchor"></span>Our mind and taking care
-of it.
+<span id="h.x2k3838n6dnl" class="anchor"></span>Our mind and taking care of it.
 
 <span id="h.gjdgxs" class="anchor"></span>Active U is for our
 professional learning. We need to track what we're learning every day:
@@ -18,23 +14,23 @@ make it fun and motivational.
 
 <span id="h.30j0zll" class="anchor"></span>**Team**
 
-  **Name**             **Department**   **Role**
-  -------------------- ---------------- --------------------------------
-  **Leif Myklebust**   **MSIS**         **Tech Lead & Pitcher**
-  **Andy Vella**       **MSIS**         **Project Manager / BA Stuff**
-  **Bryan Martyn**     **MSIS**         **General Helper Dude**
-  **Amanda Wright**    **MSIS**         **UX Stuff / Bad Graphics**
-  **Dave Harlan**      **ITS**          **Developer**
-  **Steve Coffman**    **MSIS**         **Developer**
-  **Ed Sucarski**      **MSIS**         **Developer**
-  **Greg Graziloi**    **MSIS**         **Developer**
-  **Geoff Holden**     **MSIS**         **Developer**
-  **Bruce Meier**      **MSIS**         **Developer**
-  **Misty Periard**    **MSIS**         **Developer**
-  **Scott Boomhour**   **MSIS**         **Developer**
-  **Yuying Tian**      **MSIS**         **Developer**
-  **Willy Wangsa**     **Dentistry**    **Developer**
-  **John Schultz**     **MSIS**         **Developer**
+| Name               | Department    | Role               |
+| ------------------ |:-------------:| :------------------|
+|  Leif Myklebust    | MSIS  | Tech Lead & Pitcher|
+|  Andy Vella    | MSIS | Project Manager / BA Stuff |
+|  Bryan Martyn  | MSIS | General Helper Dude |
+|  Amanda Wright | MSIS | UX Stuff / Bad Graphics |
+|  Dave Harlan   |   ITS    |      Developer |
+|  Steve Coffman |   MSIS   |      Developer |
+|  Ed Sucarski   |   MSIS   |      Developer |
+|  Greg Graziloi |   MSIS   |      Developer |
+|  Geoff Holden  |   MSIS   |      Developer |
+|  Bruce Meier   |   MSIS   |      Developer |
+|  Misty Periard |   MSIS   |      Developer |
+|  Scott Boomhour|   MSIS   |      Developer |
+|  Yuying Tian   |   MSIS   |      Developer |
+|  Willy Wangsa  |   Dentistry|    Developer |
+|  John Schultz  |   MSIS   |      Developer |
 
 <span id="h.1fob9te" class="anchor"></span>**Show and tell**
 
@@ -79,9 +75,9 @@ categories.
 
 -   Teach - 20 points - I presented at a conference
 
-### 
+###
 
-### 
+###
 
 ### The UX
 
@@ -96,7 +92,7 @@ Check out our logo:
 Graphical Elements source:
 
 Logo Background provided by Ruledragon
-[*http://www.ac-web.org/forums/showthread.php?68473-World-of-(blank)-cataclysm-template*](http://www.ac-web.org/forums/showthread.php?68473-World-of-(blank)-cataclysm-template)
+[http://www.ac-web.org/forums/showthread.php?68473-World-of-(blank)-cataclysm-template](http://www.ac-web.org/forums/showthread.php?68473-World-of-\(blank\)-cataclysm-template)
 
 Logo Font is LifeCraft by Eliot Truelove
 [*http://fontmeme.com/world-of-warcraft-font/*](http://fontmeme.com/world-of-warcraft-font/)
@@ -104,7 +100,8 @@ Logo Font is LifeCraft by Eliot Truelove
 Avatars by [Hopstarter (Jojo
 Mendoza](http://www.iconarchive.com/artist/hopstarter.html)[)](http://www.iconarchive.com/artist/hopstarter.html)
 
-Disclaimer:
+** Disclaimer: **
+-----------------
 
 World Of WorkCraft is intended as parody, satire, and humor and is for
 entertainment purposes only. Any legitimate confusion with World of
