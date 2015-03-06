@@ -5,7 +5,8 @@
 <div ng-hide="UserData.username">
   <div class="row">
     <div class="col-md-12">
-      <p class="centered">Please log in.</p>
+      <h1 class="centered"><a ng-href="#/login"><i class="fa fa-sign-in"></i> Login</a> to Start your Adventure!
+      </h1>
     </div>
   </div>
 </div>
@@ -22,10 +23,10 @@
     <div class="col-md-12 table-bordered">
       <div class="challenge-padding">
         <div class="glyphicon glyphicon-chevron-right pull-right"></div>
-          <a href="#/leaderboard/{{challenge.name}}">
-            <p align="center">{{challenge.name}}</p>
-          </a>
-          <a href="#/logachievement/{{challenge.name}}">
+        <a href="#/leaderboard/{{challenge.name}}">
+          <p align="center">{{challenge.name}}</p>
+        </a>
+        <a href="#/logachievement/{{challenge.name}}">
             Log
           </a>
         <div class="progress-bar-empty"></div>
