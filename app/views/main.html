@@ -5,31 +5,43 @@
 <div ng-hide="UserData.username">
   <div class="row">
     <div class="col-md-12">
-      <h3 class="centered"><a ng-href="#/login"><i class="fa fa-sign-in"></i> Login</a> to Start your Adventure!
+      <h3>
+        <div class="text-center center-block margin-negative-50-top">
+
+          <a class="btn btn-danger btn-lg" ng-href="#/login"><i class="fa fa-sign-in"></i> Login</a> to Start your Adventure! </div>
       </h3>
     </div>
   </div>
 </div>
 <div ng-show="UserData.username" class="container-fluid">
-  <div class="row">
-    <div class="col-md-9">
-      <h2>Pick A Challenge</h2>
-    </div>
-    <div class="col-md-3">
-      <div class="glyphicon glyphicon-plus-sign"></div>
-    </div>
-  </div>
   <div class="row" ng-repeat="challenge in myChallenges">
-    <div class="col-md-12 table-bordered">
-      <div class="challenge-padding">
-        <div class="glyphicon glyphicon-chevron-right pull-right"></div>
-        <a href="#/leaderboard/{{challenge.name}}">
-          <p align="center">{{challenge.name}}</p>
-        </a>
-        <a href="#/logachievement/{{challenge.name}}">
-            Log
-          </a>
-        <div class="progress-bar-empty"></div>
+    <div class="col-md-12">
+      <div class="panel panel-danger">
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+          <h3>
+            <div class="center-block text-center">
+              Choose Your Challenge</div>
+          </h3>
+        </div>
+        <!-- Table -->
+        <table class="table">
+          <tr>
+            <td>
+              <img src="images/medals/hack-with-friends-badge-2.png" />
+            </td>
+            <td>
+              <a class="btn btn-danger btn-lg" href="#/leaderboard/{{challenge.name}}">
+                View Leaderboard
+              </a>
+            </td>
+            <td>
+              <a class="btn btn-danger btn-lg" href="#/logachievement/{{challenge.name}}">
+                  Log Your Progress
+              </a>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>

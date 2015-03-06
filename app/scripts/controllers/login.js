@@ -21,18 +21,19 @@ angular.module('worldOfWorkCraftApp')
       console.log(UserData.username + ' clicked the login button.');
 
       $location.path('/');
-    }
+    };
 
 
   })
-  .directive('focus', function($timeout) {
+  .directive('focus', function ($timeout) {
     return {
-      scope : {
-        trigger : '@focus'
-      }, link : function(scope, element) {
-        scope.$watch('trigger', function(value) {
-          if (value === "true") {
-            $timeout(function() {
+      scope: {
+        trigger: '@focus'
+      },
+      link: function (scope, element) {
+        scope.$watch('trigger', function (value) {
+          if (value === 'true') {
+            $timeout(function () {
               element[0].focus();
             });
           }
@@ -40,4 +41,3 @@ angular.module('worldOfWorkCraftApp')
       }
     };
   });
-
