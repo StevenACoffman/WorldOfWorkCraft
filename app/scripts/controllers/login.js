@@ -20,6 +20,6 @@ angular.module('worldOfWorkCraftApp')
       UserData.username = uniqname;
       console.log(UserData.username + ' clicked the login button.');
 
-      $location.path("/");
+      $location.path('/');
     };
   });
