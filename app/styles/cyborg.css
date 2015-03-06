@@ -5719,3 +5719,8 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
 .jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6 {
   color: #fff;
 }
+.btn-white {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+}
