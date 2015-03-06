@@ -1,4 +1,4 @@
-# ** World Of WorkCraft **
+# World Of WorkCraft
 
 World Of WorkCraft is intended as parody, satire, and humor and is for entertainment purposes only. Any legitimate confusion with World of WarCraft is unintentional. World of WarCraft is a trademark or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries. Please don't sue us. Please.
 
@@ -26,11 +26,11 @@ Run `grunt` for building and `grunt serve` for preview.
 
 Running `grunt test` will run the unit tests with karma.
 
-# ** World Of WorkCraft **
+# World Of WorkCraft
 
-## *** Gamification of Professional Development ***
+## Gamification of Professional Development
 
-### **Goal**
+### Goal
 
 <span id="h.x2k3838n6dnl" class="anchor"></span>Our mind and taking care of it.
 
@@ -124,7 +124,7 @@ Logo Font is LifeCraft by Eliot Truelove
 Avatars by [Hopstarter (Jojo
 Mendoza](http://www.iconarchive.com/artist/hopstarter.html)[)](http://www.iconarchive.com/artist/hopstarter.html)
 
-### **The Technology (the fun part!)**
+### The Technology (the fun part!)
 
 As part of this hack, we wanted to play with some technologies we don’t
 all get to play with every day. We wanted to do something with NoSQL,
@@ -147,11 +147,11 @@ really well, and also some of the other team members knew some, so we
 were happy to use that.
 
 We looked into seeing if we could interface with MBlem
-([*http://www.mblem.umich.edu/*](http://www.mblem.umich.edu/)), but
+([http://www.mblem.umich.edu/](http://www.mblem.umich.edu/)), but
 found that there was too much bearucracy involved in setting ourselves
 up as a badge provider. Nonetheless, it was an interesting diversion.
 
-**Divide and conquer**
+## Divide and conquer
 
 Since we recruited quite a few people to our team, we were able to split
 up into 4 teams that worked in parallel: A data team, a web services
@@ -169,13 +169,13 @@ badges, assigning ratings/points to achievements so we can report on the
 best ones, etc.
 
 It was very interesting to learn about the TinCan API spec
-([*http://tincanapi.com/*](http://tincanapi.com/)), and we think we
+([http://tincanapi.com/](http://tincanapi.com/)), and we think we
 cound incorporate more of it into the game. We more time, we could
 provide implementations of the actual spec. This would be a great
 opportunity for collaboration with MSIS’s MLearning.
 
 We learned about GradeCraft
-([*https://www.gradecraft.com/*](https://www.gradecraft.com/)), a UM
+([https://www.gradecraft.com/](https://www.gradecraft.com/)), a UM
 project to gamify classroom learning. There must be tie-ins there that
 are interesting and valuable. This would be a great opportunity for
 collaboration with the School of Information.
