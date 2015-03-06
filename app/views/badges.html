@@ -1,8 +1,18 @@
 <p>Don't you want some of these shiny badges?</p>
-<ul>
-  <li ng-repeat="badge in allBadges" data-badge-image="{{badge.image}}" data-badge-earned="{{badge.earned}}">
-    {{badge.name}}
-    <ul><li ng-repeat="achievement in badge.achievements" data-achievement-earned="{{achievement.earned}}">{{achievement.name}}</li></ul>
-  </li>
 
-</ul>
+<div>
+  <div class="panel panel-default" ng-repeat="badge in allBadges" data-badge-earned="{{badge.earned}}">
+    <div class="panel-heading">
+      <h3 class="panel-title"><img src="images/medals/{{badge.imageFileName}}" class="badge-image"/> {{badge.name}}</h3>
+    </div>
+
+      <ul class="list-group">
+          <li class="list-group-item" ng-repeat="achievement in badge.achievements" data-achievement-earned="{{achievement.earned}}">
+            <img src="images/medals/{{achievement.imageFileName}}" class="badge-image"/>
+            {{achievement.name}}
+          </li>
+      </ul>
+
+  </div>
+
+</div>

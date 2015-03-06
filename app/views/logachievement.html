@@ -1,40 +1,62 @@
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="glyphicon glyphicon-chevron-left" ng-click="goBack();"></div>
-      <p align="center">{{challengeName}}</p>
-    </div>
-  </div>
-
-  <form ng-submit="logAchievement(achievement, pointValue);">
     <div class="row">
-      <div class="col-md-12">
-        <label for="achievement-name">Achievement: </label>
-        <select id="achievement-name" ng-model="achievement">
-          <option ng-repeat="achievement in availableAchievements" value="{{achievement}}">{{achievement.name}}</option>
+        <div class="row">
+            <h3 align="center">Achievement Log</h3>
+        </div>
+        <div class="row">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="{totalPoints()}" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    <span class="sr-only">60% Complete</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row" ng-repeat="achievement in achievements" ng-show="achievements">
+                    <div class="col-md-6 text-left">{{achievement.name}}</div>
 
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <label for="select-achievement">Type: </label>
-        <select id="select-achievement" ng-model="pointValue">
-          <option ng-repeat="achievementOption in achievementOptions" value="{{achievementOption.points}}">{{achievementOption.name}}</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <button>Log</button>
-      </div>
-    </div>
-  </form>
+                    <div class="col-md-6">Points: {{achievement.points}}</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form ng-submit="logAchievement(achievement, pointValue);">
+                    <div class="row">
+                        <div class="col-md-4 text-right">
+                            <label for="achievement-name">Achievement: </label>
+                        </div>
+                        <div class="col-md-8">
+                            <select id="achievement-name" ng-model="achievement">
+                                <option ng-repeat="achievement in availableAchievements" value="{{achievement}}">
+                                    {{achievement.name}}
+                                </option>
 
-  <div class="row" ng-repeat="achievement in achievements">
-    <div class="col-md-12">
-      <p>{{achievement.name}}</p>
-      <p>Points: {{achievement.points}}</p>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 text-right">
+                            <label for="select-achievement">Type: </label>
+                        </div>
+                        <div class="col-md-8">
+                            <select id="select-achievement" ng-model="pointValue">
+                                <option ng-repeat="achievementOption in achievementOptions"
+                                        value="{{achievementOption.points}}">
+                                    {{achievementOption.name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a class="btn log-buttons" ng-click="goBack();">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <button class="btn log-buttons">Log</button>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
 </div>
